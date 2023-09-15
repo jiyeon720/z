@@ -2,7 +2,7 @@ package kr.co.himedia.field02;
 
 import java.util.Arrays;
 
-public class FieldInit {
+public class FieldInit {  
 
 	// 기본형
 	byte byteField;			//1byte
