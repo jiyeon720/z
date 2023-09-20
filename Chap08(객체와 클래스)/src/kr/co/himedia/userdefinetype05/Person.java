@@ -3,11 +3,11 @@ package kr.co.himedia.userdefinetype05;
 // 객체(Object) = 상태정보(멤버변수) +행위정보(멤버메서드) 
 public class Person {
 
-	String name;
-	int age;
-	String phone;
+	public String name;
+	public int age;
+	public String phone;
 	
-	//기본생성자(메서드)생략↓
+	//기본생성자(메서드)생략↓ 생략해도됨
 	public Person() {
 		// 객체를 생성하는 코드 생략
 	}

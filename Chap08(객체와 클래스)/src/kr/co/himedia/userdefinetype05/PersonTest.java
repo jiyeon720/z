@@ -8,8 +8,8 @@ public class PersonTest {
 
 	public static void main(String[] args) {
 		
-		Person p = new Person();
-		p.name = "이순신";
+		Person p = new Person();		//객체 생성된 후
+		p.name = "이순신";				// 멤버에 접은 - . (dot 점) 연산자로 접근함
 		p.age = 40;
 		p.phone = "010-1234-5678";
 		
