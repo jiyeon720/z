@@ -16,25 +16,25 @@ package kr.co.himedia.singleton02;
 public class Car {
 
 	public static int serialNum = 1000;
-	private int CarId;
+	private int CarNum;
 	
 	public Car() {
-		Car.serialNum++;
-		this.CarId = serialNum;
+		serialNum++;
+		CarNum = serialNum;
 	}
 	
-	public static int getSerialNum() {
-		return serialNum;
+	
+
+	public int getCarNum() {
+		return CarNum;
 	}
-	public static void setSerialNum(int serialNum) {
-		Car.serialNum = serialNum;
+
+	public void setCarNum(int carNum) {
+		CarNum = carNum;
 	}
-	public int getCarId() {
-		return CarId;
-	}
-	public void setCarId(int carId) {
-		CarId = carId;
-	}
+	
+	
+	
 	
 	
 //private String CarString;

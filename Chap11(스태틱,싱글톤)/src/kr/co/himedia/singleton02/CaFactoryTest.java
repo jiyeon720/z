@@ -5,15 +5,24 @@ package kr.co.himedia.singleton02;
 public class CaFactoryTest {
 
 	public static void main(String[] args) {
-		Car car = new Car();
 		
-		System.out.println(Car.getSerialNum());
+		CarFactory carFactory = CarFactory.getInstance();
+		Car bmwiX1 = carFactory.createCar();
+		Car bmwiXM60 = carFactory.createCar();
 		
-		Car car2 = new Car();
+		System.out.println(bmwiX1.getCarNum());
+		System.out.println(bmwiXM60.getCarNum());
 		
-		System.out.println(Car.getSerialNum());
-	
-		
+//		
+//		Car car = new Car();
+//		
+//		System.out.println(Car.serialNum);
+//		
+//		Car car2 = new Car();
+//		
+//		System.out.println(Car.serialNum);
+//	
+//		
 			
 		
 }

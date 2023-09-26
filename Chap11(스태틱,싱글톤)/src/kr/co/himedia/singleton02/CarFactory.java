@@ -3,10 +3,10 @@ package kr.co.himedia.singleton02;
 public class CarFactory {
 	
 
-private CarFactory() {}
-	
 	private static CarFactory instance = new CarFactory();
+	private CarFactory() {}
 	
+
 	public static CarFactory getInstance() {
 		
 		if(instance == null)
@@ -16,7 +16,10 @@ private CarFactory() {}
 	
 	}
 	
-		
+	public Car createCar() {
+		Car car = new Car();
+		return car;
+	}
 
 	
 	
