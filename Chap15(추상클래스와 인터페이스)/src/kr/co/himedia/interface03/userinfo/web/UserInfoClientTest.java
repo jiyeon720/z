@@ -6,6 +6,8 @@ import java.util.Properties;
 
 import kr.co.himedia.interface03.userinfo.UserInfoDTO;
 import kr.co.himedia.interface03.userinfo.dao.UserInfoDAO;
+import kr.co.himedia.interface03.userinfo.dao.mssql.UserinfoMssqlDTO;
+import kr.co.himedia.interface03.userinfo.dao.mysql.UserinfoMysqlDTO;
 import kr.co.himedia.interface03.userinfo.dao.oracle.UserInfoOracleDAO;
 
 public class UserInfoClientTest {
@@ -26,9 +28,18 @@ public class UserInfoClientTest {
 		if(dbtype.equals("ORACLE")) {
 			userInfoDAO = new UserInfoOracleDAO();
 		}
+		else if(dbtype.equals("MYSQL")) {
+			userInfoDAO = new UserinfoMysqlDTO();
+		}
+		else if(dbtype.equals("MSSQL")) {
+			userInfoDAO = new UserinfoMssqlDTO();
+		}
 	
 		
 		userInfoDAO.insertUserInfo(userInfoDTO); 
+		userInfoDAO.updateUserInfo(userInfoDTO); 
+		userInfoDAO.selectUserInfo(userInfoDTO); 
+		userInfoDAO.deleteUserInfo(userInfoDTO); 
 		
 		
 	}
