@@ -32,13 +32,15 @@ public class MemberArrayList {
 		
 		Iterator<Member> ir = arrayList.iterator();
 		
-//		while(ir.hasNext())
-//			System.out.print(ir.next()+"\t");
-		
-		Member str0;
+
 		while(ir.hasNext()) {
-			str0 = ir.next();
-			System.out.println(str0 + "\t");
+			Member member = ir.next();
+			int tempId = member.getMemberId();
+			if(tempId == memberId) {
+				arrayList.remove(member);
+				return true;
+			}
+			
 		}
 		
 		System.out.println(memberId + "가 존재하지 않습니다.");
