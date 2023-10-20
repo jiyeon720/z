@@ -15,7 +15,7 @@ public class FileWriterTest {
 			
 			fw.write(" 굳ദ്ദി˙∇˙)ว ");		//문자열(String)출력
 			
-			fw.write(buf, 1, 2);		//buf의 1에서2까지 출력
+			fw.write(buf, 0, 6);		//buf의 1에서2까지 출력
 			
 			fw.write(" 65 ");			// 숫자를 그대로 출력
 			
